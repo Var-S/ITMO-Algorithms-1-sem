@@ -5,9 +5,9 @@ int main (){
      
 freopen("aplusbb.in","r", stdin);
 freopen("aplusbb.out","w", stdout);
-long long a,b;
+int a,b;
 cin >> a >> b;
-cout << a + (b*b);
+cout << a + b;
 return 0;
      
      
