@@ -1,9 +1,7 @@
 #include <fstream>
 #include <random>
 #include <time.h>
- 
-using namespace std;
- 
+  
 void QSort(int* arr, int left, int right){
     if (left >= right)
         return;
@@ -17,7 +15,7 @@ void QSort(int* arr, int left, int right){
             j--;
         if(i >= j)
             break;
-        swap(arr[i++], arr[j--]);
+        std::swap(arr[i++], arr[j--]);
     }
     QSort(arr, left, j);
     QSort(arr, j + 1, right);
@@ -26,8 +24,8 @@ void QSort(int* arr, int left, int right){
  
 int main()
 {
-    ifstream fin("sort.in");
-    ofstream fout("sort.out");
+    std::ifstream fin("sort.in");
+    std::ofstream fout("sort.out");
  
     int n;
     fin >> n;
